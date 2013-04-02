@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+body { margin:0; background-color:#C8FFC8;}
+#sidebartop { height:80px; background-color:#666; color:#FFF; border-bottom:4px solid #0F6; }
+#sidebarcenter { margin:0 auto; background-color:#C8FFC8; width:100%; padding-bottom:10px; }
+#sidebarbottom { margin:0 auto; background-color:#666; height:50px; text-align:center; line-height: 50px;}
+#search { margin:0 auto; height:40px; background-color:#C8FFC8; width:960px; }
+#content {height:570px; width:960px; background-color:#C8FFC8; margin:0 auto; border:0px solid #FFF; }
+#search-form { float:right; padding:2px; border:2px solid #6F6; margin:2px solid #6F6; margin-top:0; padding-top:0; }
+#logo { margin:0 auto; width:960px; }
+#logos { float:left; width:200px; height:80px; cursor:pointer; cursor:hand; }
+#daohang { float:right; width:760px; height:60px; overflow:hidden; line-height: 40px;}
+#daohang ul { list-style-type:none; }
+#daohang ul li { display:block; display:inline; font-size:16px; font-weight:bold; }
+#daohang ul li a {text-decoration:none; margin:0 20px; width:300px; height:25px; border-radius:30px; color:#FFF; text-align:center; line-height:25px; padding:3px 10px;}
+#daohang ul li a:hover { background-color:#707070; }
+#sidebarbottom ul { margin:0 auto; padding:2px; list-style:none; }
+#sidebarbottom ul li { display:inline; }
+#sidebarbottom ul li a { text-decoration:none; color:#FFF; font-size:12px; font-weight:200; }
+#sidebarbottom ul li a:hover { text-decoration:underline; }
+#daohang2 { width:auto; height:20px; text-align:right; padding-right:100px; }
+#daohang2 ul { list-style:none; margin:0; }
+#daohang2 ul li { display:inline; margin-right:0 0 0 10px; }
+#daohang2 ul li a { color:#FFF; font-size:12px; font-weight:300; text-decoration:none; }
+#daohang2 ul li a:hover { color:#03C; }
+
+.black_overlay { display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color:#CCC; z-index:1001; -moz-opacity: 0.8; opacity:.20; filter: alpha(opacity=80); }
+.white_content { display: none; position: absolute; top: 35%; left: 35%; width: 30%; height: 30%; padding: 16px; border: 10px solid orange; background-color: white; z-index:1002; overflow: auto; font-size:14px; }
+#tishi { text-align:center;}
+#tishi a { text-decoration:none; font-size:13px; font-weight:300; }
+#dencontent { text-align:center; border:2px solid #CCC; height:80%;}
+#form-login { height:60%; width:60%; margin:5% auto;}
+#exemail { height:15%; width:100%; margin-top:10%;}
+#expw { height:15%; width:100%; margin-top:10%;}
+#sub-den { height:20%; width:30%; margin-top:10%;}
+#res-den { height:20%; width:30%; margin-top:10%;}
+#propemt {font-size: 12; color:red;}

@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+#main-left { width:800px; margin:0;float:left;background-color:#FFF; text-align:center; padding:10px; }
+.htitle { color:#06C; font-size:18px; font-weight:800; text-align:left; }
+.hcon { text-align:left; font-size:14px; color:#333; }
+#huaex { margin:20px;}
+.msg { width:600px; height:110px; margin:7px auto; border-bottom:1px dotted #999; background-color:#9C6; }
+.msg-img { width:110px; float:left; height:110px; }
+.msgandname { width:490px; float:right; height:110px; font-size:12px; text-align:left; }
+.msgandname_c { width:auto; height:80px; ; }
+.msg-time { width:auto; height:20px; }
+.msg-time div a { text-decoration: none; }
+.msg-time div a:hover { text-decoration: none; color: red; }

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="signForm" type="com.xiaoxie.t.struts.form.SignForm" />
+    <form-bean name="loginForm" type="com.xiaoxie.t.struts.form.LoginForm" />
+    <form-bean name="configForm" type="org.apache.struts.action.DynaActionForm">
+      <form-property name="cuname" type="java.lang.String" />
+      <form-property name="cupic" type="org.apache.struts.upload.FormFile" />
+      <form-property name="cuaddr" type="java.lang.String" />
+      <form-property name="cutname" type="java.lang.String" />
+      <form-property name="cuqq" type="java.lang.String" />
+      <form-property name="cusex" type="java.lang.String" />
+      <form-property name="code" type="java.lang.String" />
+      <form-property name="cusyn" type="java.lang.String" />
+      <form-property name="cumsn" type="java.lang.String" />
+      <form-property name="cubirth" type="java.lang.String" />
+    </form-bean>
+    <form-bean name="searchForm" type="org.apache.struts.action.DynaActionForm">
+      <form-property name="scon" type="java.lang.String" />
+      <form-property name="type" type="java.lang.String" />
+    </form-bean>
+    <form-bean name="addEditForm" type="com.xiaoxie.t.struts.form.AddEditForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      path="/start"
+      type="com.xiaoxie.t.struts.action.StartAction"
+      validate="false">
+      <forward name="startsucc" path="/index.jsp" redirect="true"/>
+    </action>
+    <action
+      attribute="signForm"
+      input="/sign.jsp"
+      name="signForm"
+      path="/sign"
+      scope="request"
+      type="com.xiaoxie.t.struts.action.SignAction">
+      
+      <forward name="signfail" path="/sign.jsp" />
+      <forward
+        name="signsucc"
+        path="/mypage.jsp"
+        redirect="true" />
+    </action>
+    <action
+      attribute="loginForm"
+      name="loginForm"
+      path="/login"
+      scope="request"
+      type="com.xiaoxie.t.struts.action.LoginAction">
+      <forward
+        name="loginsucc"
+        path="/mypage.jsp"
+        redirect="true" />
+    </action>
+    <action
+      path="/fabu"
+      scope="request"
+      type="com.xiaoxie.t.struts.action.FabuAction"
+      validate="false">
+    </action>
+    <action
+      path="/checkCode"
+      type="com.xiaoxie.t.struts.action.CheckCodeAction"
+      validate="false">
+    </action>
+    <action
+      path="/logout"
+      type="com.xiaoxie.t.struts.action.LogoutAction"
+      validate="false">
+      <forward name="logoutsucc" path="/start.do" />
+    </action>
+    <action
+      path="/delete"
+      type="com.xiaoxie.t.struts.action.DeleteAction"
+      validate="false">
+    </action>
+    <action
+      path="/getNext"
+      type="com.xiaoxie.t.struts.action.GetNextAction"
+      validate="false">
+      <forward name="nohave" path="/mypage.jsp" />
+    </action>
+    <action
+      path="/visit"
+      type="com.xiaoxie.t.struts.action.VisitAction"
+      validate="false">
+      <forward name="succ" path="/visit.jsp" />
+    </action>
+    <action
+      path="/getNextv"
+      type="com.xiaoxie.t.struts.action.GetNextvAction"
+      validate="false">
+      <forward name="nohave" path="/visit.jsp" />
+    </action>
+    <action
+      path="/follow"
+      type="com.xiaoxie.t.struts.action.FollowAction"
+      validate="false">
+    </action>
+    <action
+      path="/unFollow"
+      type="com.xiaoxie.t.struts.action.UnFollowAction"
+      validate="false">
+    </action>
+    <action
+      path="/forword"
+      type="com.xiaoxie.t.struts.action.ForwordAction"
+      validate="false">
+    </action>
+    <action
+      path="/guangbo"
+      type="com.xiaoxie.t.struts.action.GuangboAction"
+      validate="false">
+      <forward name="gbsucc" path="/guangbo.jsp" />
+    </action>
+    <action
+      path="/hide"
+      type="com.xiaoxie.t.struts.action.HideAction"
+      validate="false">
+    </action>
+    <action
+      attribute="searchForm"
+      name="searchForm"
+      path="/search"
+      scope="request"
+      type="com.xiaoxie.t.struts.action.SearchAction"
+      validate="false">
+      <forward name="huasucc" path="/huati.jsp" />
+      
+      <forward name="yonghusucc" path="/search_yonghu.jsp" />
+      <forward name="neirongsucc" path="/search_neirong.jsp" />
+      
+    </action>
+    <action
+      attribute="addEditForm"
+      name="addEditForm"
+      path="/edit"
+      scope="request"
+      type="com.xiaoxie.t.struts.action.EditAction"
+      validate="false">
+      <forward name="editsucc" path="/huati.jsp" />
+    </action>
+    <action
+      path="/huati"
+      type="com.xiaoxie.t.struts.action.HuatiAction"
+      validate="false">
+      <forward name="succ" path="/huati.jsp" />
+    </action>
+
+    
+    
+
+  </action-mappings>
+  <controller processorClass="com.xiaoxie.t.struts.ext.ActionExt"></controller>
+  <message-resources parameter="com.xiaoxie.t.struts.ApplicationResources" />
+</struts-config>
+

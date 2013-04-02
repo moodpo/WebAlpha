@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+#cfg-title {
+	text-align:center;
+}
+#cfg-content {
+	margin-left:100px;
+}
+#form1{
+	color:#0C3;
+	font-size:18px;
+	font-weight:bold;
+}
+#form1 input {
+	margin:0;
+	padding:0;
+	width:250px;
+	height:25px;
+	margin-top:10px;
+	color:#999;
+	font-size:18px;
+	font-weight:600;
+	background-color:#C8FFC8;
+}
+#code-img {
+	width:600px;
+	height:70px;
+	float:left;
+}
+#code-img a {
+	color:#666;
+	font-size:12px;
+	text-decoration:none;
+}
+#cfg-title {
+	/*background-color:#CAFFCA;*/
+	margin:0 auto;
+	width:500px;
+	height:25px;
+	text-align:center;
+	padding:0;
+}
+#cuaddr
+{
+	margin:0;
+	padding:0;
+	width:100px;
+	height:25px;
+	margin-top:10px;
+	color:#999;
+	font-size:18px;
+	font-weight:600;
+	background-color:#C8FFC8;
+}
+#cusyn
+{
+	margin-top:10px;
+	height:100px;
+	width:250px;
+	background-color:#C8FFC8;
+}
+#main-left {float:left; margin:0; background-color:#FFF; text-align:center; padding-top:3px; }

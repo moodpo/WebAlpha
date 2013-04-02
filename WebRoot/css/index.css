@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+#huati { height:260px; width:100%; background-color:#FFF; border: thin solid #DDD; -moz-border-radius:10px; -webkit-border-radius:5px; border-radius:25px; -webkit-box-shadow:1px 1px 10px gray; -moz-box-shadow:0 0 5px black; }
+#huati-left { width:500px; height:220px; padding:20px; float:left; }
+#huati-right { width:400px; height:260px; float:right; border-left: thin groove #C8C8C8; }
+#huati-left p { font-size:14px; }
+#huati-left p a{text-decoration: none;}
+#huati-left p a:hover{color: green;}
+#huati-left h2 a{text-decoration: none; text-decoration:none;}
+#huati-left h2 a:hover{color: green;}
+#time { background-color:#DDD; height:25px; }
+#toupiao { background-color:#DDD; height:30px; }
+#signimg { width:350px; height:215px; background-image:url(image/sign.jpg); margin:25px; -moz-border-radius:5px; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 30px gray; -moz-box-shadow:0 0 0px black; }
+#clicksign input { width:80px; height:30px; border-radius:30px; font-size:15px; font-weight:bold; color:#F55; line-height:26px; text-align:center; cursor:pointer; cursor:hand; background-color:#FFD9D9; }
+#scrollmsg { overflow:hidden; width:650px; height:500px; background-color:#FFF; margin-top:20px; border: thin solid #CEFFCE; float:left; border-radius:1px; -moz-border-radius:10px; -webkit-border-radius:5px; -webkit-box-shadow:2px 2px 20px gray; -moz-box-shadow:0 0 5px black; }
+.msg { width:600px; height:110px; margin:7px auto; border-bottom:1px dotted #999; }
+.msg-img { width:110px; float:left; height:110px; }
+.msgandname { width:490px; float:right; height:110px; font-size:12px; }
+.msgandname_c { width:auto; height:90px; }
+.msg-time { width:auto; height:20px; }
+#weibotop10 { width:290px; height:340px; border: thin solid #CCC; border-radius:30px; -moz-border-radius:10px; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 20px gray; -moz-box-shadow:0 0 5px black; margin-left:10px; margin-top:20px; float:left; background-color:#FFF; }
+#daren-title { height:30px; margin-left:20px; margin-right:20px; text-align:center; color:#666; font-weight:700; font-size:16px; line-height:30px; border-radius:25px; background-color:#6C6; }
+#daren { float:left; margin:7px; background-color:#FFF; width:80px; height:80px; border-radius:10px; }
+#more { width:auto; height:20px; margin:10px; text-align:right; }
+#more a { text-decoration:none; color:#00C; font-size:13px; font-weight:300; }
+#more a:hover { text-decoration:underline; }
+#signimg { width:350px; height:215px; background-image:url(../image/sign.jpg); margin:25px; -moz-border-radius:5px; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 30px gray; -moz-box-shadow:0 0 0px black; }

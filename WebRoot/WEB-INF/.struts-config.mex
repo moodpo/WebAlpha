@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/start.do" location="225,135" dimension="89,61" />
+  <StrutsActivity path="/sign.do" location="225,225" dimension="91,61" />
+  <StrutsActivity path="/login.do" location="555,225" dimension="91,61" />
+  <StrutsActivity path="/fabu.do" location="60,345" dimension="91,61" />
+  <StrutsActivity path="/checkCode.do" location="555,135" dimension="91,61" />
+  <StrutsActivity path="/logout.do" location="60,135" dimension="91,61" />
+  <StrutsActivity path="/delete.do" location="225,345" dimension="91,61" />
+  <StrutsActivity path="/getNext.do" location="390,345" dimension="91,61" />
+  <StrutsActivity path="/visit.do" location="60,450" dimension="91,61" />
+  <StrutsActivity path="/getNextv.do" location="390,450" dimension="91,61" />
+  <StrutsActivity path="/follow.do" location="60,540" dimension="91,61" />
+  <StrutsActivity path="/unFollow.do" location="225,540" dimension="91,61" />
+  <StrutsActivity path="/forword.do" location="390,540" dimension="91,61" />
+  <StrutsActivity path="/guangbo.do" location="555,345" dimension="91,61" />
+  <StrutsActivity path="/hide.do" location="555,540" dimension="91,61" />
+  <StrutsActivity path="/search.do" location="390,630" dimension="91,61" />
+  <StrutsActivity path="/edit.do" location="60,630" dimension="91,61" />
+  <StrutsActivity path="/index.jsp" location="390,135" dimension="88,61" />
+  <StrutsActivity path="/mypage.jsp" location="390,225" dimension="91,61" />
+  <StrutsActivity path="/sign.jsp" location="60,225" dimension="91,61" />
+  <StrutsActivity path="/visit.jsp" location="225,450" dimension="91,61" />
+  <StrutsActivity path="/guangbo.jsp" location="555,450" dimension="91,61" />
+  <StrutsActivity path="/search_neirong.jsp" location="390,735" dimension="91,61" />
+  <StrutsActivity path="/search_yonghu.jsp" location="555,630" dimension="91,61" />
+  <StrutsActivity path="/huati.jsp" location="225,630" dimension="91,61" />
+  <StrutsActivity path="/huati.do" location="225,735" dimension="91,61" />
+  <StrutsTransition id="/huati.do,succ,/huati.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="270,735" />
+      <AbsolutePoint location="270,691" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/edit.do,editsucc,/huati.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="151,660" />
+      <AbsolutePoint location="225,660" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/guangbo.do,gbsucc,/guangbo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="600,406" />
+      <AbsolutePoint location="600,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/visit.do,succ,/visit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="151,480" />
+      <AbsolutePoint location="225,480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getNext.do,nohave,/mypage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="435,345" />
+      <AbsolutePoint location="435,286" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/start.do,startsucc,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="314,165" />
+      <AbsolutePoint location="390,165" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/search.do,huasucc,/huati.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="390,660" />
+      <AbsolutePoint location="316,660" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sign.do,signfail,/sign.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="225,255" />
+      <AbsolutePoint location="151,255" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sign.do,signsucc,/mypage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="316,255" />
+      <AbsolutePoint location="390,255" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/search.do,neirongsucc,/search_neirong.jsp,1" routingType="1">
+    <Bendpoints />
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,loginsucc,/mypage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="555,255" />
+      <AbsolutePoint location="481,255" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logout.do,logoutsucc,/start.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="151,165" />
+      <AbsolutePoint location="225,165" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getNextv.do,nohave,/visit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="390,480" />
+      <AbsolutePoint location="316,480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/search.do,yonghusucc,/search_yonghu.jsp,1" routingType="1">
+    <Bendpoints />
+  </StrutsTransition>
+  <StrutsTransition id="/sign.jsp,null,/sign.do,2" routingType="1">
+    <Bendpoints>
+      <Point rDim1="0,60" rDim2="-165,60" />
+      <Point rDim1="165,60" rDim2="0,60" />
+    </Bendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

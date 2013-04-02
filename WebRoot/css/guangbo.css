@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+#main-left { width:650px; float:left; margin:0; background-color:#FFF; text-align:center; padding-top:3px; }
+#main-left-title {border-radius:30px; background-color:#C8FFC8; width:200px; margin: 0 auto; height: 30px; line-height: 30px;}
+.msg { width:600px; height:110px; margin:7px auto; border-bottom:1px dotted #999; }
+.msg-img { width:110px; float:left; height:110px; }
+.msgandname { width:490px; float:right; height:110px; font-size:12px; text-align: left;}
+.msgandname_c { width:auto; height:80px; }
+.msg-time { width:auto; height:20px; }
+#main-right { float:right; width:300px; background-color:#C8FFC8; text-align:center; padding:10px 0; -webkit-box-shadow:1px 1px 20px gray;}
+#main-right-top { height:500px; width:280px; background-color:#FFF; margin:0 auto;}
+#main-right-title {text-align: center; font-size: 20px; color: green; font-weight: 600;}
+#main-right-top ol {font-size: 12px; font-weight: 800; color: gray; margin-left: 10px;}
+#main-right-top ol li {margin: 8px;text-align: left;}
+#main-right-top ol li a{text-decoration: none; color: green; text-align: left; font-size: 14px;}
+#main-right-top ol li a:hover{color:red;}
+.msg-time div a{text-decoration: none;}
+.msg-time div a:hover{text-decoration: none; color: red;}
+#fenye{height: 20px; line-height: 20px;margin-bottom: 3px;}
+#fenye a{text-decoration: none; font-size: 14px; }
+#fenye a:hover{font-size: 15px; color: green;}
+
